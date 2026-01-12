@@ -3,10 +3,11 @@ package arrays;
 public class second_largest_elements {
       public int secondLargestElement(int[] nums) {
        
-
+             int n = nums.length;
+        if(n<2) return -1;
         int largest = Integer.MIN_VALUE;
         int secondLargestElement = Integer.MIN_VALUE;
-        boolean foundSecond = false;
+        
         for(int i = 0;i<nums.length;i++){
             if(nums[i]> largest){
                 secondLargestElement = largest;
